@@ -2,12 +2,13 @@
 Overview
 This repository outlines the methodology for creating a predictive model focused on evaluating translation changes in response to specific treatments. Leveraging Ribo-seq data and various genomic inputs, the model aims to forecast translational outcomes influenced by treatments, rather than solely identifying RBP roles.
 
-Data Preparation Steps
-Step 1: GENCODE Annotation Conversion
-•	Downloaded the GENCODE gene annotation file, Release 45.
-•	Converted the file into a CSV format, adding column headers as per the GENCODE GTF file format description.
-•	Filtered to retain only exon-related data.
-•	Refined the 'attributes' column to segregate key information into distinct columns using Python dictionaries.
+## Data Preparation Steps
+### Step 1: GENCODE Annotation Conversion
+* Downloaded the GENCODE gene annotation file, Release 45.
+* Converted the file into a CSV format, adding column headers as per the GENCODE GTF file format description.
+* Filtered to retain only exon-related data.
+* Refined the 'attributes' column to segregate key information into distinct columns using Python dictionaries.
+
 Step 2: ENCODE RBP Interaction Processing
 •	Acquired NarrowPeak bed files for 139 unique RBPs.
 •	Formatted the files by adding appropriate headers based on ENCODE's format.
